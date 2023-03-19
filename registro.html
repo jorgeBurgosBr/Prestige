@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registro</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+        </ul>
+      </div>
+      <div class="desaparece">
+        <a href="index.html"
+          ><img src="icon/logo_dorado_recortado.png" 
+        /></a>
+      </div>
+      <div>
+        <ul>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="login.html">Log-In</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="contenedorLogReg">
+      <form
+        action="mailto:raul.rodriguez@universidadeuropea.es"
+        method="post"
+        class="formulario"
+      >
+        <h1 class="tituloForm">Registro de Usuario</h1>
+
+        <div class="input-contenedor">
+          <img class="icon" src="icon/usuario.png" />
+          <input type="text" placeholder="Nombre de usuario" required />
+        </div>
+
+        <div class="input-contenedor">
+          <img class="icon" src="icon/mail.png" />
+          <input type="mail" placeholder="Correo electrónico" required />
+        </div>
+
+        <div class="input-contenedor">
+          <img class="icon" src="icon/candado.png" />
+          <input type="password" placeholder="Constraseña" required />
+        </div>
+        <input type="submit" value="Registrarse" class="button" />
+        <br />
+        <br />
+        <p class="formText">
+          Al registrarse acepta nuestras condiciones de uso y política de
+          privacidad.
+        </p>
+        <p class="formText">
+          ¿Ya tiene cuenta?<a href="login.html" class="link"
+            ><br /><b>Iniciar sesión</b></a
+          >
+        </p>
+        <br />
+      </form>
+    </div>
+    <footer>
+      <div class="fondoFooter">
+        <div class="containerFooter">
+          <div class="redesSociales">
+            <p>Siguenos en nuestras redes sociales</p>
+            <img src="icon/facebook-logo-24.png" />
+            <img src="icon/instagram-logo-24.png" />
+            <img src="icon/tiktok-logo-24.png" /><img
+              src="icon/twitter-logo-24.png"
+            />
+            <img src="icon/linkedin-logo-24.png" />
+            <img src="icon/youtube-logo-24.png" />
+          </div>
+          <div class="linksFooter desaparece">
+            <a href="productos.html">Nuestros productos</a>
+            <a href="servicios.html">Nuestros servicios</a>
+          </div>
+          <div class="linksFooter">
+            <a href="login.html">Log-in</a>
+            <a href="registro.html">Regístrate</a>
+          </div>
+        </div>
+        <hr id="hrFooter">
+        <div class="politicas">
+          <p>Condiciones de uso</p>
+          <p class="desaparece">Política de privacidad</p>
+          <a href="#top"><img src="icon/next.png" id="flecha" /></a>
+          <p class="desaparece"><img src="icon/toilet.png" class="logo-pequeño" />Accesibilidad</p>
+          <p id="copyright">
+            <img src="icon/copyright.png" alt="" class="logo-pequeño" /> 2023
+            Prestige
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

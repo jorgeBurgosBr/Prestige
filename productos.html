@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!--  -->
+   <script
+   src="https://kit.fontawesome.com/7d35292691.js"
+   crossorigin="anonymous"
+ ></script>
+ <!--  -->
+   <link rel="stylesheet" href="style.css" />
+   <title>TimeLess</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+      </ul>
+    </div>
+    <div class="desaparece">
+      <a href="index.html"
+        ><img src="icon/logo_dorado_recortado.png" 
+      /></a>
+    </div>
+    <div>
+      <ul>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="login.html">Log-In</a></li>
+      </ul>
+    </div>
+  </header>
+   <div class="contenedorProductos"> <!-- Div que contiene los items del carrusel y el texto-->
+      <div class="contentItemsCarrusel"> <!--Div: Items del carrusel (3) y flechas carrusel (3)-->
+         <div class="itemCarrusel" id="item-1"> <!-- Cada item del carrusel tiene sus flechas y un id para poder redireccionar las flechas al item correspondiente-->
+           <div class="tarjetasCarrusel"><img src="img/reloj-1.png" alt="reloj 1"></div> <!--Imagen del reloj-->
+           <div class="flechasCarrusel">
+             <a href="#item-3"><i class="fa-solid fa-chevron-left"></i></i></a> <!--Las flechas son iconos sacados de fontawesome anidados en un <a>-->
+             <a href="#item-2"><i class="fa-solid fa-chevron-right"></i></a>
+           </div>
+         </div>
+         <div class="itemCarrusel" id="item-2">
+           <div class="tarjetasCarrusel"><img src="img/reloj-2.png" alt=""></div>
+           <div class="flechasCarrusel">
+             <a href="#item-1"><i class="fa-solid fa-chevron-left"></i></i></a>
+             <a href="#item-3"><i class="fa-solid fa-chevron-right"></i></a>
+           </div>
+         </div>
+         <div class="itemCarrusel" id="item-3">
+           <div class="tarjetasCarrusel"><img src="img/reloj-3.png" alt=""></div>
+           <div class="flechasCarrusel">
+             <a href="#item-2"><i class="fa-solid fa-chevron-left"></i></i></a>
+             <a href="#item-1"><i class="fa-solid fa-chevron-right"></i></a>
+           </div>
+         </div>
+       </div>
+      <div class="textoAltaGama">
+        <h1>ALTA GAMA</h1>
+        <p>
+          Descubre nuestros relojes de alta gama, una selección exclusiva de marcas y modelos que reflejan el lujo y 
+          la elegancia en su máxima expresión. Desde los diseños más clásicos y atemporales hasta los más vanguardistas 
+          y sofisticados, nuestros relojes de alta gama se destacan por su calidad excepcional y su atención al detalle. 
+          Cada reloj es una obra de arte que combina ingeniería y diseño para ofrecer la experiencia de lujo definitiva. 
+          En nuestra tienda encontrarás las marcas más prestigiosas y los modelos más codiciados, ¡descubre nuestra colección 
+          ahora y haz que el tiempo sea un lujo!
+        </p>
+      </div>
+   </div>
+   <hr id="hrProductos">
+   <div class="contenedorProductos" style="margin-bottom: 100px;">
+      <div class="textoMinimalist">
+        <h1>MINIMALIST</h1>
+        <p>
+          Encuentra la perfección en la simplicidad con nuestra colección de relojes minimalistas. Diseñados para aquellos que
+          valoran la elegancia y la funcionalidad en su vida diaria. Con diseños limpios y modernos, están hechos para durar y 
+          adaptarse a cualquier ocasión. En nuestra tienda encontrarás modelos que combinan la estética minimalista con la más 
+          alta calidad en materiales y fabricación. Descubre nuestra colección de relojes minimalistas ahora y vive la experiencia 
+          de la simplicidad.
+        </p>
+      </div>
+      <div class="contentItemsCarrusel">
+         <div class="itemCarrusel" id="item-4">
+           <div class="tarjetasCarrusel"><img src="img/reloj-4.png" alt=""></div>
+           <div class="flechasCarrusel">
+             <a href="#item-6"><i class="fa-solid fa-chevron-left"></i></i></a>
+             <a href="#item-5"><i class="fa-solid fa-chevron-right"></i></a>
+           </div>
+         </div>
+         <div class="itemCarrusel" id="item-5">
+           <div class="tarjetasCarrusel"><img src="img/reloj-5.png" alt=""></div>
+           <div class="flechasCarrusel">
+             <a href="#item-4"><i class="fa-solid fa-chevron-left"></i></i></a>
+             <a href="#item-6"><i class="fa-solid fa-chevron-right"></i></a>
+           </div>
+         </div>
+         <div class="itemCarrusel" id="item-6">
+           <div class="tarjetasCarrusel"><img src="img/reloj-6.png" alt=""></div>
+           <div class="flechasCarrusel">
+             <a href="#item-5"><i class="fa-solid fa-chevron-left"></i></i></a>
+             <a href="#item-4"><i class="fa-solid fa-chevron-right"></i></a>
+           </div>
+         </div>
+       </div>
+   </div>
+   <footer>
+    <div class="fondoFooter">
+      <div class="containerFooter">
+        <div class="redesSociales">
+          <p>Siguenos en nuestras redes sociales</p>
+          <img src="icon/facebook-logo-24.png" />
+          <img src="icon/instagram-logo-24.png" />
+          <img src="icon/tiktok-logo-24.png" /><img
+            src="icon/twitter-logo-24.png"
+          />
+          <img src="icon/linkedin-logo-24.png" />
+          <img src="icon/youtube-logo-24.png" />
+        </div>
+        <div class="linksFooter desaparece">
+          <a href="productos.html">Nuestros productos</a>
+          <a href="servicios.html">Nuestros servicios</a>
+        </div>
+        <div class="linksFooter">
+          <a href="login.html">Log-in</a>
+          <a href="registro.html">Regístrate</a>
+        </div>
+      </div>
+      <hr id="hrFooter">
+      <div class="politicas">
+        <p>Condiciones de uso</p>
+        <p class="desaparece">Política de privacidad</p>
+        <a href="#top"><img src="icon/next.png" id="flecha" /></a>
+        <p class="desaparece"><img src="icon/toilet.png" class="logo-pequeño" />Accesibilidad</p>
+        <p id="copyright">
+          <img src="icon/copyright.png" alt="" class="logo-pequeño" /> 2023
+          Prestige
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

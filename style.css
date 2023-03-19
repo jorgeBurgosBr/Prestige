@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Playfair Display', serif;
+}
+/* INDEX */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  height: 70px;
+}
+header .desaparece{
+  width: fit-content;
+  height: fit-content;
+}
+
+header:hover {
+  background-color:#112751;
+}
+
+header li {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+ul {
+  width: 100%;
+  margin-top: 10px;
+}
+
+header a {
+  width: fit-content;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.7em 4em;
+  font-size: 1.8vh;
+  display: inline-block;
+  align-items: center;
+  font-family: "Fjalla One", sans-serif;
+  transition: background-color 1s ease;
+}
+header a:hover {
+  color:#000f1c;
+}
+
+header img {
+width: 50px;
+}
+
+body {
+  background-color: #000f1c;
+}
+
+#videoFondo {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10000;
+}
+
+#ocupacion {
+  height: 58.5em;
+  width: 100%;
+}
+/* Empieza quienes somos */
+/* Div que contiene los divs del texto y el logo */
+.containerQuienesSomos{
+    margin: auto;
+    width: 75%;
+    height: 500px;
+    display: flex;
+    /* flex-direction row para que los divs se posicionen el uno al lado del otro */
+    flex-direction: row;
+    /* justify-content y align-items los he utilizado para centrar los elementos del container 
+    ya que en los divs anidados el height: fit-content y el width se lo he dado yo */
+    justify-content: space-between;
+    align-items: center;
+}
+.quienesSomos {
+  /* div que contiene el texto de quienes somos */
+    width: 600px;
+    height: fit-content;
+}
+.quienesSomos h2 {
+  color: #486dac;
+  font-size: 3.125em;
+}
+.quienesSomos p {
+  color: white;
+  font-size: large;
+    line-height: 1.7;
+    padding-top: 30px;
+}
+.logo-quienes-somos {
+    /* border: 1px solid white; */
+    height: fit-content;
+}
+.logo-quienes-somos img {
+  height: 250px;
+}
+/* Empieza el footer */
+footer {
+  /* border: 3px solid orange; */
+  color: white;
+  background-color:#112751;
+  width: 100%;
+  height: 80px;
+}
+.fondoFooter{
+  background-color: #112751;
+  padding-top:2%;
+}
+.containerFooter{
+  height: 100%;
+  width: 75%;
+  /* border: 2px solid black; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2%;
+}
+.redesSociales{
+  /* border: 1px solid white; */
+  width: fit-content;
+  height: fit-content;
+  line-height: 1.8;
+}
+.linksFooter{
+  /* border: 1px solid white; */
+  height: fit-content;
+  width: fit-content;
+  line-height: 1.8;
+}
+.linksFooter a{
+  color:white;
+  text-decoration: none;
+  display: block;
+}
+.linksFooter a:hover{
+  color: #a17c45;
+}
+.politicas{
+  width: 75%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-pequeño {
+  width: 0.75rem;
+}
+#flecha{
+  width: 20px;
+}
+#hrFooter{
+  width: 90%;
+  margin: auto;
+}
+/* PÁGINA PRODUCTOS: */
+
+.contenedorProductos {
+  /*Div que contiene texto y vídeo, existen dos contenedores de esta clase en la página de productos*/
+  background-color: #112751;
+  padding: 50px 0px;
+  margin: 100px 200px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contentItemsCarrusel {
+  /*Div que contiene los items del carrusel (3 de ellos) overflow hidden para que no se muestren los otros dos, solo eñ que esté seleccionado. 
+  Existen dos divs como estos en la página productos*/
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+}
+.itemCarrusel {
+  /*Div que contiene la tarjeta del carrusel (donde está la imagen del reloj) y las flechas del carrusel (para pasar de un item a otro)*/
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.tarjetasCarrusel { 
+  /*Div que contiene la imagen del reloj*/
+  background-color: whitesmoke;
+  height: 100%;
+}
+.tarjetasCarrusel img {
+  width: 100%;
+  height: 100%;
+}
+.flechasCarrusel {
+  position: absolute;
+  /*El div es un elemento en bloque,pero necesitamos que el div que contiene las flechas se sobreponga al div de la imagen, para ello
+  hacemos el .itemCarrusel relativo, y el .flechasCarrusel absoluto con un top: 0;*/
+  top: 0; 
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.flechasCarrusel a {
+  text-decoration: none;
+}
+.flechasCarrusel i {
+  /*clase que modifica el color del icono de las flechas del carrusel*/
+  color: #000f1c;
+}
+.flechasCarrusel i:hover {
+  color: #a17c45;
+}
+.textoAltaGama {
+  height: 400px;
+  width: 400px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  line-height: 1.6;
+  padding-top: 20px;
+}
+.textoAltaGama:hover {
+  border-width: 3px;
+  border-style: double none;
+  border-color: white;
+}
+.textoAltaGama h1 {
+  font-family: "Nunito", sans-serif;
+}
+.textoMinimalist {
+  height: 400px;
+  width: 400px;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-align: center;
+  line-height: 1.6;
+  padding-top: 20px;
+}
+.textoMinimalist:hover {
+  border-width: 3px;
+  border-style: double none;
+  border-color: white;
+}
+.textoMinimalist h1 {
+  font-family: "Nunito", sans-serif;
+}
+#hrProductos{
+  display: none;
+}
+/* FIN PÁGINA PRODUCTOS */
+/* Pagina servicios*/
+#tituloServicios {
+  text-align: center;
+  margin: auto;
+  margin-top: 90px;
+  font-size: 9vh;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+}
+
+.contenedorServicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 120px auto;
+  width: 80%;
+  height: 500px;
+  background-color: #112751;
+}
+.contenedorServicios1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 120px auto;
+  width: 80%;
+  height: 500px;
+  background-color: #112751;
+}
+.textoServicios {
+  width: 500px;
+  margin-top: 80px;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+}
+
+.videoServicios {
+  margin-top: 90px;
+}
+.videoServicios iframe {
+  width: 500px;
+  height: 315px;
+}
+
+.textoServicios h1 {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+.textoServicios1 {
+  width: 500px;
+  margin-top: 80px;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+}
+
+.textoServicios1 h1 {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+.videoServicios1 {
+  margin-top: 90px;
+}
+.videoServicios1 iframe {
+  width: 500px;
+  height: 315px;
+}
+#lineaSeparadora {
+  display: none;
+}
+
+/* LOGIN/REGISTRO*/
+.formulario {
+  background: #fff;
+  margin-top: 50px;
+}
+.tituloForm {
+  padding-top: 20px;
+  text-align: center;
+  color: #1a2537;
+  font-size: 48px;
+  font-family: "Fjalla One", sans-serif;
+}
+.contenedorLogReg {
+  width: 100%;
+  padding: 0px 15px 200px;
+  margin-top: 150px;
+}
+.icon {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  padding-top: 4px;
+}
+
+input[type="text"],
+input[type="mail"],
+input[type="password"] {
+  text-align: center;
+  font-size: 20px;
+  width: 80%;
+  padding: 10px;
+  border: none;
+}
+
+.input-contenedor {
+  margin: 15px auto 15px;
+  width: 80%;
+  border: 1px solid #aaa;
+  padding: 0px 15px;
+}
+
+.button {
+  border: none;
+  width: fit-content;
+  margin-left: 34%;
+  font-size: 24px;
+  color: white;
+  background-color: #1a2537;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button1 {
+  border: none;
+  width: fit-content;
+  margin-left: 40%;
+  font-size: 24px;
+  color: white;
+  background-color: #1a2537;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #a17c45;
+  color: black;
+}
+
+.button1:hover {
+  background-color: #a17c45;
+  color: black;
+}
+
+.formText {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #1a2537;
+  font-weight: 600px;
+}
+
+.link:hover {
+  color: cadetblue;
+}
+
+@media only screen and (max-width: 992px) {
+  #tituloServicios {
+    font-size: 5vh;
+    margin-bottom: -50px;
+  }
+  .contenedorServicios {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  .textoServicios {
+    border: 1px solid white;
+    width: 100%;
+    margin-top: 80px;
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+  }
+
+  .videoServicios {
+    border: 1px solid white;
+    width: fit-content;
+    margin: 90px auto 0;
+  }
+
+  .videoServicios iframe {
+    text-align: center;
+  }
+  .contenedorServicios1 {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  .textoServicios1 {
+    border: 1px solid white;
+    width: 100%;
+    margin-top: 80px;
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+  }
+
+  .videoServicios1 {
+    border: 1px solid white;
+    width: fit-content;
+    margin: 90px auto 0;
+  }
+  .videoServicios1 iframe {
+    text-align: center;
+  }
+  #lineaSeparadora {
+    display: block;
+    width: 100%;
+    border: 2px solid white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* LOGIN/REGISTRO */
+  .formulario {
+    margin-top: 150px;
+    width: 500px;
+    margin: auto;
+    border-radius: 2%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* INDEX */
+  .containerQuienesSomos{
+    width: 100%;
+  }
+  .quienesSomos{
+    margin:auto;
+    text-align: center;
+  }
+  .logo-quienes-somos {
+    display: none;
+  }
+  .desaparece{
+    display: none;
+  }
+  header{
+    justify-content: space-around;
+  }
+  header a {
+    font-size: 1.6vh;
+    padding: 0.3em 2em;
+  }
+  /* PRODUCTOS */
+  .contenedorProductos {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  #hrProductos{
+    display: block;
+    margin: 50px auto -50px;
+    border: 1px solid white;
+    border-style: solid;
+    width: 50%;
+  }
+  .contentItemsCarrusel {
+    margin: auto;
+  }
+  .textoAltaGama {
+    margin: auto;
+  }
+  .textoAltaGama:hover {
+    border: 0;
+  }
+  .textoMinimalist {
+    margin: auto;
+  }
+  .textoMinimalist:hover {
+    border: 0;
+  }
+  /* SERVICIOS */
+  #tituloServicios {
+    font-size: 5vh;
+    margin-bottom: -50px;
+  }
+  .contenedorServicios {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  .textoServicios {
+    border: 1px solid white;
+    width: 100%;
+    margin-top: 80px;
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+  }
+
+  .videoServicios {
+    border: 1px solid white;
+    width: fit-content;
+    margin: 90px auto 0;
+  }
+
+  .videoServicios iframe {
+    text-align: center;
+  }
+  .contenedorServicios1 {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  .textoServicios1 {
+    border: 1px solid white;
+    width: 100%;
+    margin-top: 80px;
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+  }
+
+  .videoServicios1 {
+    border: 1px solid white;
+    width: fit-content;
+    margin: 90px auto 0;
+  }
+  .videoServicios1 iframe {
+    text-align: center;
+  }
+  #lineaSeparadora {
+    display: block;
+    width: 100%;
+    border: 2px solid white;
+  }
+}
