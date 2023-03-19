@@ -441,7 +441,6 @@ input[type="password"] {
     padding-bottom: 80px;
   }
   .textoServicios {
-    border: 1px solid white;
     width: 100%;
     margin-top: 80px;
     font-family: "Fjalla One", sans-serif;
@@ -449,7 +448,6 @@ input[type="password"] {
   }
 
   .videoServicios {
-    border: 1px solid white;
     width: fit-content;
     margin: 90px auto 0;
   }
@@ -464,7 +462,6 @@ input[type="password"] {
     padding-bottom: 80px;
   }
   .textoServicios1 {
-    border: 1px solid white;
     width: 100%;
     margin-top: 80px;
     font-family: "Fjalla One", sans-serif;
@@ -472,7 +469,6 @@ input[type="password"] {
   }
 
   .videoServicios1 {
-    border: 1px solid white;
     width: fit-content;
     margin: 90px auto 0;
   }
@@ -559,7 +555,6 @@ input[type="password"] {
     padding-bottom: 80px;
   }
   .textoServicios {
-    border: 1px solid white;
     width: 100%;
     margin-top: 80px;
     font-family: "Fjalla One", sans-serif;
@@ -567,7 +562,6 @@ input[type="password"] {
   }
 
   .videoServicios {
-    border: 1px solid white;
     width: fit-content;
     margin: 90px auto 0;
   }
@@ -582,7 +576,6 @@ input[type="password"] {
     padding-bottom: 80px;
   }
   .textoServicios1 {
-    border: 1px solid white;
     width: 100%;
     margin-top: 80px;
     font-family: "Fjalla One", sans-serif;
@@ -590,7 +583,6 @@ input[type="password"] {
   }
 
   .videoServicios1 {
-    border: 1px solid white;
     width: fit-content;
     margin: 90px auto 0;
   }
